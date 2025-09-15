@@ -62,6 +62,7 @@ class TemplateApp(App):
             await asyncio.sleep(0.01)
 
         while True:
+            print(self.root.ids["tab_root"].current_tab.text)
             await asyncio.sleep(1.0)
 
             # increment the counter using internal libs and update the gui
